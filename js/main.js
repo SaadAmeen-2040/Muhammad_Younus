@@ -132,17 +132,17 @@
       if (goal === 'booking') why.push('you want visitors to book or send enquiries');
       if (pages === 'large') why.push('you may need more than 10 pages');
       if (support === 'yes') why.push('you want help after launch');
-      return { key: 'Premium ($750)', title: 'Premium Website, $750',
+      return { key: 'Premium', title: 'Premium Website',
         text: 'Premium fits because ' + why.join(', and ') + '. It includes a booking or enquiry system, social media integration, Google visibility setup, advanced mobile optimization, and 1 month of support.' };
     }
     if (goal === 'local' || pages === 'medium') {
       var why2 = [];
       if (goal === 'local') why2.push('your customers look for your location and message you on WhatsApp');
       if (pages === 'medium') why2.push('you need 6 to 10 pages');
-      return { key: 'Standard ($500)', title: 'Business Website, $500',
+      return { key: 'Standard', title: 'Business Website',
         text: 'Standard fits because ' + why2.join(', and ') + '. It includes up to 10 pages, custom design, a services or portfolio section, Google Maps, WhatsApp integration, and SEO setup.' };
     }
-    return { key: 'Basic ($300)', title: 'Starter Website, $300',
+    return { key: 'Basic', title: 'Starter Website',
       text: 'Basic is enough for you. You need up to 5 pages so people can see who you are and contact you. It includes mobile-friendly design, a contact form, and basic SEO. You can grow later.' };
   }
 
